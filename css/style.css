@@ -149,7 +149,7 @@ a {
 }
 
 .mainDetails {
-  padding: 25px 35px;
+  padding: 5px 35px;
   border-bottom: 2px solid #0552cf;
   background: #e4e3e3;
    
@@ -282,10 +282,6 @@ padding-left: 1px;
     padding-right: 160px;
 }
 
-.sectinconctentyjet2 {
- float: right;
-    padding-right: 60px;
-}
 .sectionTitle h1 {
   font-family: "Gudea", helvetica, arial, sans-serif;
   font-size: 0.89em;
@@ -350,6 +346,17 @@ padding-left: 1px;
     -webkit-transition: all 0.25s linear;
   }
 
+    .sectinconctentyjet {
+        display: none;
+    }    
+    .Seccontntlista {
+float: inherit;
+padding-left: 0px;
+  /* Nese duhet me pa vijat
+  border-style: dotted;
+  border-width: 1px; */
+}
+    
   #headshot {
     display: none;
   }
@@ -382,6 +389,9 @@ padding-left: 1px;
     padding: 15px 15px;
   }
 
+    .sectinconctentyjet {
+        display: none;
+    }    
   section {
     padding: 15px 0 0;
   }
