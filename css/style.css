@@ -198,6 +198,7 @@ a {
 
 #headshot img {
   width: 100%;
+  min-width: 80px; /* shtuar qe ne mobile te mos shkoj e vogel fare fotot*/
   height: auto;
   border-radius: 50px;
      -webkit-box-shadow: 2px 2px 5px 0px rgb(58, 57, 57); /*shadow for  the box image*/
@@ -324,17 +325,20 @@ padding-left: 1px;
 
 
 
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media all /* and (min-width: 602px) */ and (max-width: 800px) {
   
-#headshot {
+/*#headshot  {
     display: none;
   }
-    
+  Kjo u hoq qe edhe ne mobile te dali foto... bukur */
   .keySkills {
     -webkit-column-count: 1;
     column-count: 1;
   }
-}
+  
+/*}*/
+  
+
 @media all and (max-width: 54rem) {
   .cv {
     width: 95%;
@@ -346,22 +350,25 @@ padding-left: 1px;
     -webkit-transition: all 0.25s linear;
   }
 
-    .sectinconctentyjet {
+  .sectinconctentyjet {
         display: none;
     }    
-    .Seccontntlista {
-float: inherit;
-padding-left: 0px;
+  .Seccontntlista {
+  float: inherit;
+  padding-left: 0px;
+  } 
   /* Nese duhet me pa vijat
   border-style: dotted;
   border-width: 1px; */
-}
+  
     
-  #headshot {
+ /* #headshot {
     display: none;
   }
+  E hoqa qe ne mobile te dali koka*/ 
+  /*#name,*/
 
-  #name,
+
   #contactDetails {
     float: none;
     width: 100%;
@@ -384,32 +391,41 @@ padding-left: 0px;
     column-count: 2;
   }
 }
+
+
+
+/*  Deleted for max width 480 lene si me siper
 @media all and (max-width: 480px) {
-  .mainDetails {
-    padding: 15px 15px;
-  }
+  /*.mainDetails {
+     padding: 15px 15px;
+   }
+   Ne mobile te dali bukur*/    
+   
+ /* Deleted for max width 480 lene si me siper
+     .sectinconctentyjet {
+         display: none;
+     }    
+   section {
+     padding: 15px 0 0;
+   }
+ 
+   #mainArea {
+     padding: 0 25px;
+   }
+ 
+   .keySkills {
+     -webkit-column-count: 1;
+     column-count: 1;
+   }
+ 
+   #name h1 {
+     line-height: 0.8em;
+     margin-bottom: 4px;
+   }
+ }
+} 
+*/
 
-    .sectinconctentyjet {
-        display: none;
-    }    
-  section {
-    padding: 15px 0 0;
-  }
-
-  #mainArea {
-    padding: 0 25px;
-  }
-
-  .keySkills {
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-
-  #name h1 {
-    line-height: 0.8em;
-    margin-bottom: 4px;
-  }
-}
 @media print {
   .cv {
     width: 100%;
