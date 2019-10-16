@@ -336,10 +336,17 @@ padding-left: 1px;
     column-count: 1;
   }
   
-/*}*/
+}
   
 
 @media all and (max-width: 54rem) {
+ 
+    .mainDetails {
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+     }
+  
   .cv {
     width: 95%;
     margin: 10px 10px;
